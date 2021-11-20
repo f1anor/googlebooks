@@ -1,0 +1,41 @@
+.wrapper {
+  width: 160px;
+}
+.wrapper .inner {
+  position: relative;
+  width: 100%;
+}
+
+.inner:after {
+  content: "";
+  display: block;
+  background-image: url(assets/svg/arrow-down.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  background-position: 0 0;
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  pointer-events: none;
+}
+
+.inner > select {
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 40px;
+  color: #333;
+  font-size: 16px;
+  font-family: var(--font-main);
+  cursor: pointer;
+}

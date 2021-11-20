@@ -1,8 +1,10 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { reducer as formReducer } from "redux-form";
+import { appReducer } from "./app-reducer";
+import { bookReducer } from "./book-reducer";
 import { bookshelfReducer } from "./bookshelf-reducer";
 
 export default combineReducers({
-  form: formReducer,
   bookshelf: bookshelfReducer,
+  book: bookReducer,
+  app: appReducer,
 });

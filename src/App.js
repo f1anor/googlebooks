@@ -1,17 +1,17 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./configureStore";
 
 import "./index.css";
-import Layout from "./components/Layout";
+import LayoutContainer from "components/LayoutContainer";
 
 const App = () => {
   return (
     <Provider store={store}>
-      <BrowserRouter>
-        <Layout />
-      </BrowserRouter>
+      <HashRouter>
+        <LayoutContainer />
+      </HashRouter>
     </Provider>
   );
 };

@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-bold);
+  color: #333;
+}
+
+@media screen and (max-width: 1140px) {
+  .title {
+    margin-right: 46px;
+  }
+}

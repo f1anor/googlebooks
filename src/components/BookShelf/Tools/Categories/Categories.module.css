@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: var(--font-bold);
+  color: #333;
+}

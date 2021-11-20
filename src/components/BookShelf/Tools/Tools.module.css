@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inner {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1140px) {
+  .inner {
+    display: block;
+    width: unset;
+  }
+}

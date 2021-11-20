@@ -1,11 +1,22 @@
+:root {
+  /* цвета */
+  --main-background-color: #f7f7f9;
+  /* скругление углов */
+  --border-radius: 30px;
+  /* тень */
+  --box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.01);
+  /* шрифт */
+  --font-main: "NotoSerif";
+  --font-bold: "NotoSerif-Bold";
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "NotoSerif", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
@@ -23,6 +34,9 @@ code {
   font-family: "Montserrat" !important;
 } */
 
+a {
+  text-decoration: none !important;
+}
 a:hover {
   text-decoration: none !important;
 }
@@ -34,4 +48,21 @@ ul {
 
 * button {
   outline: none !important;
+}
+
+@font-face {
+  font-family: "AmaticSC-Bold";
+  src: local("MyFont"),
+    url(assets/fonts/Amatic_SC/AmaticSC-Bold.ttf) format("woff");
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: local("MyFont"),
+    url(assets/fonts/Noto_Serif/NotoSerif-Regular.ttf) format("woff");
+}
+
+@font-face {
+  font-family: "NotoSerif-Bold";
+  src: local("MyFont"),
+    url(assets/fonts/Noto_Serif/NotoSerif-Bold.ttf) format("woff");
 }
