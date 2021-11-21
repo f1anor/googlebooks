@@ -23,7 +23,11 @@ const BookShelf = ({ books = [], totalCount, handleLoadMore, isLoading }) => {
 
           <div className={css.nextButtonWrapper}>
             <button onClick={handleLoadMore} className={css.nextButton}>
-              <LoadButton />
+              {!isLoading ? (
+                <LoadButton className={css.loadIcon} />
+              ) : (
+                <Preloader className={css.preload} />
+              )}
               LOAD MORE
             </button>
           </div>

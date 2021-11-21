@@ -28,7 +28,7 @@
 
 .nextButton {
   position: relative;
-  padding-left: 40px;
+  padding-left: 45px;
   padding-right: 30px;
   height: 40px;
   border: none;
@@ -41,13 +41,28 @@
   margin: 0 auto;
 }
 
-.nextButton svg {
+.loadIcon {
   position: absolute;
   top: 50%;
   left: 20px;
   transform: translate(0, -50%);
   width: 15px;
   height: 15px;
+}
+
+.nextButton .preload {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+.nextButton .preload svg {
+  width: 20px;
+  height: 20px;
+  stroke: #333;
 }
 
 @keyframes fadeOut {

@@ -67,6 +67,7 @@ export const bookshelfReducer = (state = initialState, { type, payload }) => {
         page: state.page + 1,
         books: { ...state.books, ...tmpObj },
         booksOnPage: [...state.booksOnPage, ...Object.keys(tmpObj)],
+        isBooksFetching: null,
       };
     case FETCH_NEXT_PAGE_FAILURE:
       return {
