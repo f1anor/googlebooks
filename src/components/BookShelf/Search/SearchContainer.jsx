@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { useQuery } from "utils";
@@ -10,6 +10,8 @@ const SearchContainer = ({ ...props }) => {
 
   const search = query.get("search");
   const [value, changeValue] = useState("");
+
+  const ref = useRef();
 
   useEffect(() => {
     changeValue(search || "");
@@ -23,6 +25,8 @@ const SearchContainer = ({ ...props }) => {
       query.set("search", value);
     }
     history.push(`/?${query.toString()}`);
+    console.log(ref);
+    ref.current.blur();
   };
 
   const handleSubmit = (e) => {
@@ -34,6 +38,7 @@ const SearchContainer = ({ ...props }) => {
       changeValue={changeValue}
       handleSubmit={handleSubmit}
       handleSetSearch={handleSetSearch}
+      ref={ref}
       {...props}
     />
   );

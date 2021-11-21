@@ -11,5 +11,6 @@
 @media screen and (max-width: 1140px) {
   .title {
     margin-right: 46px;
+    text-shadow: 0 0 3px rgba(255, 255, 255);
   }
 }
